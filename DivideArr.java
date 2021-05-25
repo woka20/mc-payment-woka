@@ -26,9 +26,7 @@ public class DivideArr {
         return temp;
       }
     
-
-
-
+// Running The Program Here
 public static void main(String[]args){  
     int a[]={1,0,5,6,3,2,6};  
    

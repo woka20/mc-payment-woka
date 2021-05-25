@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 public class NotBelowZero {
-    public static int Largest( int[] ars) {
+    public static int largest( int[] ars) {
       for (int i =0; i< ars.length; i++){
         for(int j=i+1; j<ars.length; j++){
           if (ars[i]>ars[j]){
@@ -15,24 +15,24 @@ public class NotBelowZero {
       return ars[ars.length-1];
     }
 
-    public static ArrayList<Integer> NotBelowZeroMethod(int[]ars){
-      var ListInt= new ArrayList<Integer>();
-      var Max=Largest(ars);
+    public static ArrayList<Integer> notBelowZeroMethod(int[]ars){
+      var listInt= new ArrayList<Integer>();
+      var max=largest(ars);
       for(int i=0; i<ars.length; i++){
-        if(ars[i]==Max){
-          ListInt.add(ars[i]);
+        if(ars[i]==max){
+          listInt.add(ars[i]);
 
         }
       }
  
-      return ListInt;
+      return listInt;
     }
 
 
 public static void main(String[]args){  
   int a[]={1,2,5,6,3,2,6};  
  
-  System.out.println("Not Below Zero From List: "+NotBelowZeroMethod(a));  
+  System.out.println("Not Below Zero From List: "+notBelowZeroMethod(a));  
   }}
 
 

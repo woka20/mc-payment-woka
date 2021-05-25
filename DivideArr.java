@@ -4,7 +4,7 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream; 
 
 public class DivideArr {
-    public static List<Integer> DivideList( int[] ars, int x) {
+    public static List<Integer> divideList( int[] ars, int x) {
         List<Integer> removal=new ArrayList<Integer>(); 
         float division;
         List<Integer> temp=IntStream.of(ars).boxed().collect(Collectors.toList());
@@ -32,5 +32,5 @@ public class DivideArr {
 public static void main(String[]args){  
     int a[]={1,0,5,6,3,2,6};  
    
-    System.out.println("Divide List:"+DivideList(a, 6));  
+    System.out.println("Divide List:"+divideList(a, 6));  
     }}
